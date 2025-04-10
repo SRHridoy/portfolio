@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="styles/style.css">
+		<style>
+			@keyframes glow {
+				0% { text-shadow: 0 0 10px currentColor; }
+				50% { text-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
+				100% { text-shadow: 0 0 10px currentColor; }
+			}
+			.glow-text {
+				animation: glow 2s ease-in-out infinite;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="custom-cursor"></div>
+		<div class="cursor-dot"></div>
+		<header>
+			<nav>
+				<div class="left">ESN Dev</div>
+				<div class="hamburger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="right nav-links">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#certification">Certification</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="firstSection" id="home">
+				<div class="leftSection">
+					<span class="greeting">Hello, I'm</span><br />
+					<span class="name">Md. Sohanur Rahman Hridoy</span>
+					<br />
+					<span id="element" class="typed-text"></span>
+					
+					<br />
+					<p
+						style="
+							font-size: 1.5rem;
+							line-height: 1.8;
+							margin-top: 20px;
+						"
+					>
+						I craft scalable and high-performance mobile apps with
+						<span
+							class="glow-text"
+							style="
+								color: #64ffda;
+								font-weight: bold;
+							"
+							>Flutter</span
+						>
+						and
+						<span
+							class="glow-text"
+							style="
+								color: #00bfff;
+								font-weight: bold;
+							"
+							>Dart</span
+						>
+					</p>
+					<div class="cta-buttons">
+						<a href="path/to/resume.pdf" target="_blank" class="cta-button primary-button">Resume</a>
+						<a href="#contact" class="cta-button secondary-button">Hire Me</a>
+					</div>
+				</div>
+				<div class="rightSection">
+					<div class="image-container">
+						<img
+							src="sources/images/profile.png"
+							alt="Profile Picture"
+							class="profile-img-large"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="secondSection" id="about">
+				<!-- About Me -->
+				<div class="about-me">
+					<h2>About Me</h2>
+					<p>
+						I'm
+						<strong class="highlight">Md. Sohanur Rahman Hridoy</strong>, a passionate Flutter developer focused on crafting
+						beautiful, responsive, and scalable mobile applications.
+						I enjoy solving complex problems, building full-stack
+						experiences, and bringing ideas to life with clean and
+						efficient code. <br /><br />
+						With a solid foundation in
+						<span class="highlight">mobile app development</span>
+						and a love for
+						<span class="highlight">backend systems</span>, I
+						strive to create impactful digital experiences that
+						blend performance with user-centric design.
+					</p>
+				</div>
+
+				<!-- Skills -->
+					<div style="flex: 1 1 45%; min-width: 300px">
+					<h2 style="font-size: 2rem; color: #64ffda; margin-bottom: 25px">Skills</h2>
+					<div style="display: flex; flex-direction: column; gap: 20px">
+						<!-- Skill item -->
+						<div>
+							<h3 style="color: #ccd6f6">Flutter <span style="float: right">90%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 90%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">Dart <span style="float: right">85%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 85%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">Python <span style="float: right">80%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 80%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">FastAPI <span style="float: right">75%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 75%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">Firebase <span style="float: right">75%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 75%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">REST APIs <span style="float: right">80%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 80%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">Sqflite <span style="float: right">70%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 70%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">Problem Solving <span style="float: right">85%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 85%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">HTML & CSS <span style="float: right">75%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 75%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+						<div>
+							<h3 style="color: #ccd6f6">PHP <span style="float: right">70%</span></h3>
+							<div style="height: 10px; background-color: #233554; border-radius: 5px">
+								<div style="width: 70%; height: 100%; background: linear-gradient(90deg, #64ffda, #00bfff); border-radius: 5px"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+				<section
+    class="techSection"
+    style="padding: 60px 5%; background-color: #0a192f"
+>
+    <h2
+        style="
+            text-align: center;
+            font-size: 2.2rem;
+            color: #64ffda;
+            margin-bottom: 40px;
+        "
+    >
+        Technologies I Use
+    </h2>
+
+    <div
+        style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        "
+    >
+        <!-- Technology Item -->
+        <div class="tech-card">Flutter</div>
+        <div class="tech-card">Dart</div>
+        <div class="tech-card">GetX</div>
+        <div class="tech-card">Bloc</div>
+        <div class="tech-card">Provider</div>
+        <div class="tech-card">Python</div>
+        <div class="tech-card">FastAPI</div>
+        <div class="tech-card">Firebase</div>
+        <div class="tech-card">Sqflite</div>
+        <div class="tech-card">REST APIs</div>
+        <div class="tech-card">Git</div>
+        <div class="tech-card">HTML & CSS</div>
+        <div class="tech-card">PHP</div>
+    </div>
+</section>
+
+			<section class="projectSection" id="project">
+				<h2 style="
+                text-align: center;
+                font-size: 2.2rem;
+                color: #64ffda;
+                margin-bottom: 40px;
+            ">Projects</h2>
+				<div class="project-container">
+					<!-- Project Card 1: ScanVerse App -->
+					<div class="project-card">
+						<div class="project-image-container">
+							<img
+								src="sources/images/scan.jpg"
+								alt="ScanVerse App"
+								class="project-image"
+							/>
+						</div>
+						<h3 class="project-title">ScanVerse App</h3>
+						<p class="project-description">
+							A Flutter-based scanning app that integrates with
+							Firebase for real-time data sync. Features barcode
+							scanning and cloud storage.
+						</p>
+						<a
+							href="https://github.com/your-username/scanverse"
+							target="_blank"
+							class="github-button"
+							>View on GitHub</a
+						>
+					</div>
+
+					<!-- Project Card 2: Teacher's Assistant App -->
+					<div class="project-card">
+						<div class="project-image-container">
+							<img
+								src="sources/images/ta.jpg"
+								alt="Teacher's Assistant App"
+								class="project-image"
+							/>
+						</div>
+						<h3 class="project-title">Teacher's Assistant App</h3>
+						<p class="project-description">
+							A mobile app built with Flutter to help teachers
+							manage classes, track students' attendance, and
+							grades efficiently.
+						</p>
+						<a
+							href="https://github.com/your-username/teachers-assistant"
+							target="_blank"
+							class="github-button"
+							>View on GitHub</a
+						>
+					</div>
+
+					<!-- Project Card 3: Weather App -->
+					<div class="project-card">
+						<div class="project-image-container">
+							<img
+								src="sources/images/weather.jpg"
+								alt="Weather App"
+								class="project-image"
+							/>
+						</div>
+						<h3 class="project-title">Weather App</h3>
+						<p class="project-description">
+							Real-time weather app using Flutter and REST APIs.
+							Features geolocation, dark mode, and clean
+							animations.
+						</p>
+						<a
+							href="https://github.com/your-username/weather-app"
+							target="_blank"
+							class="github-button"
+							>View on GitHub</a
+						>
+					</div>
+				</div>
+			</section>
+			<!-- Education Section -->
+			<section class="educationSection" id="education">
+				<h2>Education</h2>
+				<div class="education-container">
+					<!-- College Education -->
+					<div class="education-card">
+						<h3>College</h3>
+						<p>Higher Secondary School Certificate</p>
+						<p>New Govt. Degree College, Rajshahi</p>
+						<p class="highlight">Grade: GPA 5.0 (out of 5.0)</p>
+						<p class="highlight">Year : 2020</p>
+					</div>
+
+					<!-- University Education -->
+					<div class="education-card">
+						<h3>University</h3>
+						<p>B.Sc. (Engineering) in Computer Science Engineering</p>
+						<p>Hajee Mohammad Danesh Science & Technology University, Dinajpur-5200</p>
+						<p class="highlight">CGPA: 3.78(out of 4.0)</p>
+						<p class="highlight">Graduation: 2026</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Certification Section -->
+			<section class="certificationSection" id="certification">
+				<h2>Certifications</h2>
+				<div class="certification-container">
+					<!-- Certification 1: Introduction to Flutter -->
+					<div class="certification-card">
+						<h3>Introduction to Flutter</h3>
+						<p>Coursera, Online Course</p>
+						<a
+							href="path-to-your-certificate/intro-to-flutter.pdf"
+							target="_blank"
+							class="view-certificate"
+							>View Certificate</a
+						>
+					</div>
+
+					<!-- Certification 2: Intermediate Python -->
+					<div class="certification-card">
+						<h3>Intermediate Python</h3>
+						<p>Udemy, Online Course</p>
+						<a
+							href="path-to-your-certificate/intermediate-python.pdf"
+							target="_blank"
+							class="view-certificate"
+							>View Certificate</a
+						>
+					</div>
+
+					<!-- Certification 3: ISO Certified Flutter -->
+					<div class="certification-card">
+						<h3>ISO Certified Flutter</h3>
+						<p>ISO Certification</p>
+						<a
+							href="path-to-your-certificate/iso-flutter.pdf"
+							target="_blank"
+							class="view-certificate"
+							>View Certificate</a
+						>
+					</div>
+				</div>
+			</section>
+
+            <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">
+      Have a question, idea or want to work together? Fill out the form and let’s talk!
+    </p>
+  
+    <div class="contact-card">
+        <div class="card-header">
+            <i class="fas fa-envelope"></i>
+            <h3>Get In Touch</h3>
+        </div>
+        <form
+          action="https://formspree.io/f/yourFormID"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+      
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+      
+          <button
+            type="submit"
+            class="submit-button"
+          >
+            Send Message
+          </button>
+        </form>
+    </div>
+  </section>
+  
+            
+			<!-- Footer Section -->
+			<footer>
+				<div class="footer-content">
+					<h2>Let's Connect</h2>
+					<p>
+						Have a project in mind or just want to say hi? Feel free
+						to reach out!
+					</p>
+					<a
+						href="mailto:your.email@example.com"
+						class="say-hello"
+						>Say Hello</a
+					>
+				</div>
+
+				<div class="social-icons">
+					<!-- Social Icons -->
+					<a
+						href="https://github.com/SRHridoy"
+						target="_blank"
+						class="social-icon"
+					>
+						<i class="fab fa-github"></i>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/md-sohanur-rahman-hridoy-2385ab257/
+						target="_blank"
+						class="social-icon"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a
+						href="https://www.facebook.com/Clasher007"
+						target="_blank"
+						class="social-icon"
+					>
+						<i class="fab fa-facebook"></i>
+					</a>
+				</div>
+
+				<p class="footer-note">
+					&copy; 2025 Md. Sohanur Rahman Hridoy. Made with ❤️
+				</p>
+			</footer>
+		</main>
+		<!-- Load library from the CDN -->
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<!-- Custom JavaScript -->
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
